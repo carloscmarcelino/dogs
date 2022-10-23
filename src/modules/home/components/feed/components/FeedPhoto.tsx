@@ -1,4 +1,4 @@
-import { GridItem, Image, Text } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 import { PhotoResponse } from '../../api/types';
 
 type FeedPhotoProps = {
@@ -6,12 +6,10 @@ type FeedPhotoProps = {
   index: number;
 };
 
-export const FeedPhoto = ({ photo, index }: FeedPhotoProps) => {
+export const FeedPhoto = ({ photo }: FeedPhotoProps) => {
   return (
-    <GridItem rowSpan={1} colSpan={1}>
+    <Box w="300px" h="300px" cursor="pointer" border="1px solid red">
       <Image src={photo.src} alt={photo.title} />
-
-      <Text as="span">{photo.acessos}</Text>
-    </GridItem>
+    </Box>
   );
 };
