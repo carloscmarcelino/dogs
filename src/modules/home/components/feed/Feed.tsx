@@ -1,6 +1,6 @@
 import { Flex, Grid } from '@chakra-ui/react';
-import { PhotoResponse } from '../api/types';
-import { useGetPhoto } from '../hooks/useGetPhoto';
+import { PhotoResponse } from '../../api/types';
+import { useGetPhoto } from '../../hooks/useGetPhoto';
 import { FeedPhoto } from './components';
 
 export const Feed = () => {

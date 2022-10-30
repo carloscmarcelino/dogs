@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import axios from '../../../../lib/axios';
+import axios from '../../../lib/axios';
 import { PhotoResponse } from './types';
 
 // export const API_URL = 'https://dogsapi.origamid.dev/json';
