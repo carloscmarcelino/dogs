@@ -8,6 +8,7 @@ export const theme = extendTheme({
     purple1: '#87f',
     purple2: '#76f',
     white: '#fff',
+    text: '#333',
   },
   fonts: {
     body: 'montserrat',

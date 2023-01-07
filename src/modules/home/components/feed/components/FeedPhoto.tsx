@@ -8,8 +8,8 @@ type FeedPhotoProps = {
 
 export const FeedPhoto = ({ photo }: FeedPhotoProps) => {
   return (
-    <Box w="300px" h="300px" cursor="pointer" border="1px solid red">
-      <Image src={photo.src} alt={photo.title} />
+    <Box h="300px" w="300px" cursor="pointer">
+      <Image src={photo.src} alt={photo.title} w="100%" h="100%" />
     </Box>
   );
 };
