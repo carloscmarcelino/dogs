@@ -1,13 +1,14 @@
-import LoginImage from '../../../../assets/Login.jpg';
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import { CustomButtom, Footer } from '../../../../components';
 import { Header } from '../../../../components/Header';
 import { TextInput } from '../../../../components/TextInput';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { LoginValidator } from '../../validators/LoginValidator';
 import { useNavigate } from 'react-router-dom';
 import { RegisterValidator } from '../../validators/RegisterValidator';
+
+const LoginImage = new URL('../../../../assets/Login.jpg', import.meta.url)
+  .href;
 
 type RegisterOptions = {
   login: string;
