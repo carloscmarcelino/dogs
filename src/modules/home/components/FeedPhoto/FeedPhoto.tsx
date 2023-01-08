@@ -1,5 +1,5 @@
+import { PhotoResponse } from '@/modules/home/api/types';
 import { Box, Image } from '@chakra-ui/react';
-import { PhotoResponse } from '../../../api/types';
 
 type FeedPhotoProps = {
   photo: PhotoResponse;

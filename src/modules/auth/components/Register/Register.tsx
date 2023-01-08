@@ -51,41 +51,43 @@ export const Register = () => {
           <Image src={LoginImage} alt="Login image" />
         </Box>
 
-        <Flex
-          as="form"
-          onSubmit={handleSubmit(handleRegister)}
-          w="70%"
-          p="0 4rem"
-          flexDirection="column"
-          mt="10rem"
-          gap="1rem 0"
-          flex="1"
-        >
-          <Text color="text" fontSize="2rem">
-            Cadastre-se
-          </Text>
+        <Box flex="1">
+          <Flex
+            as="form"
+            onSubmit={handleSubmit(handleRegister)}
+            w="70%"
+            p="0 4rem"
+            flexDirection="column"
+            mt="10rem"
+            gap="1rem 0"
+            flex="1"
+          >
+            <Text color="text" fontSize="2rem">
+              Cadastre-se
+            </Text>
 
-          <TextInput
-            register={register('login')}
-            label="Usuário"
-            errors={errors?.login}
-          />
+            <TextInput
+              register={register('login')}
+              label="Usuário"
+              errors={errors?.login}
+            />
 
-          <TextInput
-            register={register('email')}
-            label="E-mail"
-            errors={errors?.email}
-          />
+            <TextInput
+              register={register('email')}
+              label="E-mail"
+              errors={errors?.email}
+            />
 
-          <TextInput
-            register={register('password')}
-            label="Senha"
-            type="password"
-            errors={errors?.password}
-          />
+            <TextInput
+              register={register('password')}
+              label="Senha"
+              type="password"
+              errors={errors?.password}
+            />
 
-          <CustomButtom type="submit" label="Entrar" />
-        </Flex>
+            <CustomButtom type="submit" label="Entrar" />
+          </Flex>
+        </Box>
       </Flex>
 
       <Footer />

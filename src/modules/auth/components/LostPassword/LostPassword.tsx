@@ -38,6 +38,8 @@ export const LostPassword = () => {
     }
   };
 
+  console.log('oi');
+
   return (
     <>
       <Header />
@@ -47,28 +49,30 @@ export const LostPassword = () => {
           <Image src={LoginImage} alt="Login image" />
         </Box>
 
-        <Flex
-          as="form"
-          onSubmit={handleSubmit(handleLostPassword)}
-          w="70%"
-          p="0 4rem"
-          flexDirection="column"
-          mt="10rem"
-          gap="1rem 0"
-          flex="1"
-        >
-          <Text color="text" fontSize="2rem">
-            Perdeu a senha?
-          </Text>
+        <Box flex="1">
+          <Flex
+            as="form"
+            onSubmit={handleSubmit(handleLostPassword)}
+            w="70%"
+            p="0 4rem"
+            flexDirection="column"
+            mt="10rem"
+            gap="1rem 0"
+            flex="1"
+          >
+            <Text color="text" fontSize="2rem">
+              Perdeu a senha?
+            </Text>
 
-          <TextInput
-            register={register('login')}
-            label="E-mail/Usuário"
-            errors={errors?.login}
-          />
+            <TextInput
+              register={register('login')}
+              label="E-mail/Usuário"
+              errors={errors?.login}
+            />
 
-          <CustomButtom type="submit" label="Entrar" />
-        </Flex>
+            <CustomButtom type="submit" label="Entrar" />
+          </Flex>
+        </Box>
       </Flex>
 
       <Footer />
